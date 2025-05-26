@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-content {
+  width: 900px;
+  border: 1px solid #ccc;
+  padding: px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header > img {
+    width: 100%;      
+    height: auto;     
+    display: block;   
+    border-radius: 4px; 
+}
+
+.name {
+  margin-top: 0%;
+  padding-left: 60px;  
+  font-size: 30px;
+  color: #000000; 
+}
+
+.name p,
+.congrats p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.congrats {
+    padding-left: 60px;
+}
+
+.achievements {
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  /* justify-content: center; */
+  gap: 12px;
+  /* margin-top: 20px; */
+  font-size: 16px;
+}
+
+#sign {
+    height: 100px;
+}
+
+#logo {
+    height: 200px;
+    
+}
+
+
+
+/* ===== Responsive for Mobile Devices ===== */
+@media (max-width: 600px) {
+  .main-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .name, .congrats {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+  }
+
+  .achievements {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  #sign {
+    height: 60px;
+  }
+
+  #logo {
+    height: 100px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scaler Certificate Generator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class = "main-content">
+        <div class = "header">
+            <img src = "Scaler header.jpg">
+        </div>
+        <br>
+        <div class = "name">
+            <p><span id="fullname"></span></p>
+        </div>
+        <div class = "congrats">
+            <p>In recognition of the completion of the tutorial:<b><span id="course"></span></b></p>
+            <p>Following are the learning items, which are covered in this tutorial</p>
+            <ul class="achievements">
+                <li><span class="icon">▶️</span> <span id="video"></span> Video Tutorials</li>
+                <li><span class="icon">🔴</span> <span id="module"></span> Modules</li>
+                <li><span class="icon">🟢</span> <span id="challenge"></span> Challenges</li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class = "date">
+                <span id="date"></span>
+            </div>
+            </ul>
+            <br><br><br>
+            <div class = "sign">
+                <img id = "sign" src = "Scaler Sign.jpg">
+                <img id = "logo" style="float: right;" src = "Scaler Logo.jpg">
+            </div>
+            <p>Anshuman Singh</p>
+            <div class = "founder">
+                <p>Co-founder <b>SCALER</b></p>
+            </div>
+        </div>
+    </div>
+    <script>
+  document.getElementById("fullname").innerText = localStorage.getItem("fullname");
+  document.getElementById("course").innerText = localStorage.getItem("course");
+  document.getElementById("date").innerText = localStorage.getItem("date");
+  document.getElementById("video").innerText = localStorage.getItem("video");
+  document.getElementById("module").innerText = localStorage.getItem("module");
+  document.getElementById("challenge").innerText = localStorage.getItem("challenge");
+</script>
+
+</body>
+</html>
